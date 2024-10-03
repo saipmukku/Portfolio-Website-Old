@@ -5,7 +5,7 @@ import '../App.css';
 function ExperiencePage() {
     return (
       <Box>
-        Experience Page
+        Experience will be listed here.
       </Box>
     )
 }

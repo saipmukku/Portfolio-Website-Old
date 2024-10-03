@@ -5,7 +5,7 @@ import '../App.css'
 function ContactPage() {
     return (
       <Box>
-        Contact Page
+        Contact information will be listed here.
       </Box>
     )
 }

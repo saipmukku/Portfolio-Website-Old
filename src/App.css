@@ -9,16 +9,12 @@
   align-items: center;
 }
 
-.all-page-content {
+.content {
   margin: 1vw;
 }
 
 .name {
   color: #007FFF;
-}
-
-.nav-bar-info {
-  padding-left: 1vw;
 }
 
 .home-page {
@@ -42,6 +38,8 @@
 .outer-resume {
   display: flex;
   flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
 
 .icon-resume {
@@ -52,11 +50,16 @@
 }
 
 .image-resume {
+  display: flex;
+  flex-direction: row;
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .actual-resume {
-  width: 500px;
+  width: 72.5%;
 }
 
 /* ID Values */
