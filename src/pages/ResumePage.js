@@ -12,7 +12,7 @@ function ResumePage() {
                 </IconButton>
             </Box>
             <Box className="image-resume">
-                <Box component="img" src="resume.jpeg" className="actual-resume" alt="Resume" sx={{ width:'37.5vw' }}/>
+                <Box component="img" src="resume.jpeg" className="actual-resume" alt="Resume" sx={{ width:'36vw' }}/>
             </Box>
         </Box>
     )
