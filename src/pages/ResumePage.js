@@ -8,11 +8,11 @@ function ResumePage() {
         <Box className="outer-resume">
             <Box className="icon-resume">
                 <IconButton>
-                <HiOutlineDocumentSearch />
+                    <HiOutlineDocumentSearch />
                 </IconButton>
             </Box>
             <Box className="image-resume">
-                <img src="resume.jpeg" className="actual-resume" width="430" alt="Resume"/>
+                <Box component="img" src="resume.jpeg" className="actual-resume" alt="Resume" sx={{ width:'37.5vw' }}/>
             </Box>
         </Box>
     )

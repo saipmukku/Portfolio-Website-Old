@@ -33,16 +33,16 @@ function MainPage() {
         <Fade in={true} timeout={2000}>
             <Box className="main-page" sx={{ width: '100%' }}>
                 <Box className="nav-bar">
-                <Typography variant="h4" className="nav-bar-info">Saipraneeth Mukku | Software Engineer</Typography>
-                <Tabs className="tabs-box" onChange={handleChange} value={value}>
-                    <Tab label="Home" value={0}/>
-                    <Tab label="Resume" value={1}/>
-                    <Tab label="Experience" value={2}/>
-                    <Tab label="Contact" value={3}/>
-                </Tabs>
+                    <Typography variant="h4" className="nav-bar-info" sx={{ fontWeight:'400', mt:'2vh' }}>Saipraneeth Mukku | Software Engineer</Typography>
+                    <Tabs onChange={handleChange} value={value} variant="standard" sx={{ width:'1000' }} centered={true}>
+                        <Tab label="Home" value={0}/>
+                        <Tab label="Resume" value={1}/>
+                        <Tab label="Experience" value={2}/>
+                        <Tab label="Contact" value={3}/>
+                    </Tabs>
                 </Box>
                 <Box className="all-page-content">
-                {renderContent()}
+                    {renderContent()}
                 </Box>
             </Box>
         </Fade>
