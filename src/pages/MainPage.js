@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Tab, Tabs, Typography, Fade } from '@mui/material';
+import { Box, Tab, Tabs, Typography } from '@mui/material';
 import HomePage from './HomePage';
 import ResumePage from './ResumePage';
 import ExperiencePage from './ExperiencePage';
@@ -30,22 +30,20 @@ function MainPage() {
     }
 
     return (
-        <Fade in={true} timeout={2000}>
-            <Box className="main-page" sx={{ width: '100%' }}>
-                <Box className="nav-bar">
-                    <Typography variant="h5" sx={{ fontWeight:'300', mt:'1vh', pl:'1vw' }}>Saipraneeth Mukku | Software Engineer</Typography>
-                    <Tabs onChange={handleChange} value={value} variant="standard" sx={{ width:'1000' }} centered={true}>
-                        <Tab label="Home" value={0}/>
-                        <Tab label="Resume" value={1}/>
-                        <Tab label="Experience" value={2}/>
-                        <Tab label="Contact" value={3}/>
-                    </Tabs>
-                </Box>
-                <Box className="content">
-                    {renderContent()}
-                </Box>
+        <Box className="main-page" sx={{ width: '100%' }}>
+            <Box className="nav-bar">
+                <Typography variant="h5" sx={{ fontWeight:'300', mt:'1vh', pl:'1vw' }}>Saipraneeth Mukku | Software Engineer</Typography>
+                <Tabs onChange={handleChange} value={value} variant="standard" sx={{ width:'1000' }} centered={true}>
+                    <Tab label="Home" value={0}/>
+                    <Tab label="Resume" value={1}/>
+                    <Tab label="Experience" value={2}/>
+                    <Tab label="Contact" value={3}/>
+                </Tabs>
             </Box>
-        </Fade>
+            <Box className="content">
+                {renderContent()}
+            </Box>
+        </Box>
     );
 }
 
