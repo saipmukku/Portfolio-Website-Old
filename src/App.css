@@ -62,6 +62,12 @@
   width: 72.5%;
 }
 
+.outer-exp {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 /* ID Values */
 #box-header {
   text-align: center;

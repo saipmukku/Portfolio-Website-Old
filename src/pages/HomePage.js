@@ -5,32 +5,38 @@ import '../App.css';
 
 function HomePage() {
     return (
-      <motion.div animate={{ opacity: [0, 1]}} transition={{
-        type: "spring",
-        tiffness: 260,
-        damping: 20
-      }}>
-        <Box className="home-page">
-          <Box className="personal-info">
+      <Box className="home-page">
+        <Box className="personal-info">
+          <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
             <Avatar alt="Neeth's picture" src="portrait.jpeg" className="avatar" sx={{ height: 420, width: 420 }} variant="rounded"/>
-            <Box>
-              <h1 id="box-header">
+          </motion.div>
+          <Box>
+            <h1 id="box-header">
+              <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
                 Hi, my name is <span className="name">Saipraneeth Mukku</span>
-              </h1>
-              <h3 id="box-body">
+              </motion.div>
+            </h1>
+            <h3 id="box-body">
+              <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
                 but they call me <span className="name">Neeth</span>
-              </h3>
-            </Box>
+              </motion.div>
+            </h3>
           </Box>
-          <Box className="about-me">
-            <span id="about-me-id"><h1>About me</h1></span>
+        </Box>
+        <Box className="about-me">
+          <span id="about-me-id">
+            <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
+              <h1>About me</h1>
+            </motion.div>
+          </span>
+          <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
             <Typography variant="h5">I am currently a senior at the University of Maryland, College Park, studying Computer Science with a minor in General Business.
               I have experience building software for various companies, and am always looking for ways to expand my skillset. Click through the tabs
               to view my resume, experience, and contact me with inquiries!
             </Typography>
-          </Box>
+          </motion.div>
         </Box>
-      </motion.div>
+      </Box>
     )
   }
 

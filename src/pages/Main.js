@@ -6,7 +6,7 @@ import ExperiencePage from './ExperiencePage';
 import ContactPage from './ContactPage';
 import '../App.css';
 
-function MainPage() {
+function Main() {
     const [value, setValue] = useState(0);
 
     const handleChange = (_event, newValue) => {
@@ -47,4 +47,4 @@ function MainPage() {
     );
 }
 
-export default MainPage;
+export default Main;
