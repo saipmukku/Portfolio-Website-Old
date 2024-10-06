@@ -8,7 +8,7 @@ function HomePage() {
       <Box className="home-page">
         <Box className="personal-info">
           <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
-            <Avatar alt="Neeth's picture" src="portrait.jpeg" className="avatar" sx={{ height: 420, width: 420 }} variant="rounded"/>
+            <Avatar alt="Neeth's picture" src="portrait.jpeg" className="avatar" sx={{ height: 420, width: 420 }} variant="circle"/>
           </motion.div>
           <Box>
             <h1 id="box-header">
