@@ -17,7 +17,7 @@ function HomePage() {
               </motion.div>
             </h1>
             <h3 id="box-body">
-              <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
+              <motion.div className="animated-icon" whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.1 }}>
                 but they call me <span className="name">Neeth</span>
               </motion.div>
             </h3>
