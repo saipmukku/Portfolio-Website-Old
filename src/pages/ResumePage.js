@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Modal, Backdrop } from '@mui/material';
+import { Box, Modal } from '@mui/material';
 import { motion } from "framer-motion";
 import '../App.css';
 

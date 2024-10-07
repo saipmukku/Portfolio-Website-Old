@@ -96,12 +96,21 @@
 }
 
 .animated-avatar {
-  padding-bottom: 2vh;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .contact-info {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 1vh;
+}
+
+.socials {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   justify-content: space-between;
 }
 
