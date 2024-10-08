@@ -57,6 +57,7 @@
   flex-direction: column;
   justify-content: flex-end;
   background-color: #E5D4C0;
+  width: 100vw;
 }
 
 .outer-home {
