@@ -5,7 +5,7 @@ import '../App.css';
 
 function ExperiencePage() {
   const[open, setOpen] = useState(0);
-  let aws = JobCardFunction("Amazon Web Services", "Arlington, VA", "Software Development Engineer Intern", "June 2024 - August 2024",
+  let aws = JobCardFunction("Amazon Web Services", "Arlington, VA", "Software Development Engineer Intern", "May 2024 - August 2024",
     ["TypeScript", "Java", "AWS Lambda", "AWS API Gateway", "Kotlin", "AWS CLI"], false);
   let uhg = JobCardFunction("UnitedHealth Group", "Phoenix, AZ", "Software Engineer Intern", "June 2023 - August 2023",
     ["Vite", "React", "Python", "Django", "PostreSQL", "Kubernetes"], false);
