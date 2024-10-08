@@ -10,14 +10,13 @@ function ContactPage() {
   const copyAndUpdateTooltip = () => {
     navigator.clipboard.writeText("saipmukku@gmail.com")
     setEmailTooltip("Copied!");
-    console.log("Clicked!");
     setTimeout(() => {
       setEmailTooltip("Copy");
     }, 1000);
   }
 
   return (
-    <Box className="main-contact">
+    <Box className="outer-contact">
       <Box>
         <Tooltip title="Leo" placement="top" arrow TransitionComponent={Fade}
           slotProps={{ popper: { modifiers: { name: "offset", options: { offset: [0, -90]} } } }}>

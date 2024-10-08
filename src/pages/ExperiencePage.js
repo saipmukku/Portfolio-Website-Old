@@ -1,10 +1,18 @@
 import React, { useState } from 'react';
-import { Box, Card, Divider, Stack, Chip, Typography, Modal } from '@mui/material';
+import { Box, Card, Divider, Stack, Chip, Typography } from '@mui/material';
 import { motion } from "framer-motion";
 import '../App.css';
 
 function ExperiencePage() {
   const[open, setOpen] = useState(0);
+  let aws = JobCardFunction("Amazon Web Services", "Arlington, VA", "Software Development Engineer Intern", "June 2024 - August 2024",
+    ["TypeScript", "Java", "AWS Lambda", "AWS API Gateway", "Kotlin", "AWS CLI"], false);
+  let uhg = JobCardFunction("UnitedHealth Group", "Phoenix, AZ", "Software Engineer Intern", "June 2023 - August 2023",
+    ["Vite", "React", "Python", "Django", "PostreSQL", "Kubernetes"], false);
+  let arl = JobCardFunction("Army Research Laboratory", "Baltimore, MD", "Research Intern", "June 2022 - August 2022",
+      ["Python", "Raspberry Pi", "Research"], false);
+  let dennys = JobCardFunction("Denny's", "Laurel, MD", "Service Assistant", "June 2021 - August 2021", ["Teamwork"], false);
+  
 
   const handleOpen = (value) => {
     if(open === value) setOpen(0);
@@ -15,49 +23,23 @@ function ExperiencePage() {
     <Box className="outer-exp">
       <Box className="exp">
         <Box className="card-exp" onClick={() => handleOpen(1)}>
-          {JobCardFunction("Amazon Web Services", "Arlington, VA", "Software Development Engineer Intern", "June 2024 - August 2024",
-            ["TypeScript", "Java", "AWS Lambda", "AWS API Gateway", "Kotlin", "AWS CLI"], false)}
+          {aws}
         </Box>
-        <Modal className="card-desc" open={open === 1} onClick={() => handleOpen(open)}>
-          <Box>
-            {JobCardFunction("Amazon Web Services", "Arlington, VA", "Software Development Engineer Intern", "June 2024 - August 2024",
-              ["TypeScript", "Java", "AWS Lambda", "AWS API Gateway", "Kotlin", "AWS CLI"], true)}
-          </Box>
-        </Modal>
       </Box>
       <Box className="exp">
         <Box className="card-exp" onClick={() => handleOpen(2)}>
-          {JobCardFunction("UnitedHealth Group", "Phoenix, AZ", "Software Engineer Intern", "June 2023 - August 2023",
-            ["Vite", "React", "Python", "Django", "PostreSQL", "Kubernetes"], false)}
+          {uhg}
         </Box>
-        <Modal className="card-desc" open={open === 2} onClick={() => handleOpen(open)}>
-          <Box>
-            {JobCardFunction("UnitedHealth Group", "Phoenix, AZ", "Software Engineer Intern", "June 2023 - August 2023",
-              ["Vite", "React", "Python", "Django", "PostreSQL", "Kubernetes"], true)}
-          </Box>
-        </Modal>
       </Box>
       <Box className="exp">
         <Box className="card-exp" onClick={() => handleOpen(3)}>
-          {JobCardFunction("Army Research Laboratory", "Baltimore, MD", "Research Intern", "June 2022 - August 2022",
-            ["Python", "Raspberry Pi", "Research"], false)}
+          {arl}
         </Box>
-        <Modal className="card-desc" open={open === 3} onClick={() => handleOpen(open)}>
-          <Box>
-            {JobCardFunction("Army Research Laboratory", "Baltimore, MD", "Research Intern", "June 2022 - August 2022",
-              ["Python", "Raspberry Pi", "Research"], true)}
-          </Box>
-        </Modal>
       </Box>
       <Box className="exp">
         <Box className="card-exp" onClick={() => handleOpen(4)}>
-          {JobCardFunction("Denny's", "Laurel, MD", "Service Assistant", "June 2021 - August 2021", ["Teamwork"], false)}
+          {dennys}
         </Box>
-        <Modal className="card-desc" open={open === 4} onClick={() => handleOpen(open)}>
-          <Box>
-            {JobCardFunction("Denny's", "Laurel, MD", "Service Assistant", "June 2021 - August 2021", ["Teamwork"], true)}
-          </Box>
-        </Modal>
       </Box>
     </Box>
   )
@@ -78,7 +60,7 @@ function JobCardFunction(title, location, jobTitle, duration, skills, modal) {
       '&:hover': {
         transform: 'translateY(-5px)',
         boxShadow: '0 12px 36px rgba(0, 0, 0, 0.15)',
-      }, backgroundColor:"#89BBFE" }} square={false}>
+      }, backgroundColor:"#D3D3D3" }} square={false}>
       <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
         <Box sx={{ p: 2 }}>
           <Stack direction="row" sx={{ justifyContent:"space-between", gap:"5vw", alignItems:"center" }}>

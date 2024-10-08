@@ -2,32 +2,83 @@
   Secondary text color: #41658A*/
 
 /* Class Values */
-.main-page {
+.animated-avatar {
+  padding-bottom: 10vh;
+  padding-top: 10vh;
+}
+
+.actual-resume {
+  height: 100%;
+  object-fit: contain;
+  width: 100%;
+}
+
+.contact-info {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  gap: 1vh;
+  justify-content: space-between;
+}
+
+.exp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.icon-resume {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.image-resume {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.main-page {
   height: 100vh;
 }
 
 .nav-bar {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
 }
 
-.content {
-  margin: 0;
+.outer-contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-color: #E5D4C0;
 }
 
-.name {
-  color: #007FFF;
+.outer-exp {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: #E5D4C0;
 }
 
-.home-page {
+.outer-home {
   display: flex;
   flex-direction: column;
   padding: 2vw;
+  background-color: #E5D4C0;
+}
+
+.outer-resume {
+  background-color: #E5D4C0;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  overflow: hidden;
+  width: 100%;
 }
 
 .personal-info {
@@ -43,89 +94,9 @@
   max-width: 100vw;
 }
 
-.outer-resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.icon-resume {
-  display: flex;
-  flex: 1;
-  justify-content: center;
-  align-items: center;
-}
-
-.image-resume {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.actual-resume {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.outer-exp {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-}
-
-.exp {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.card-desc {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-contact {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.animated-avatar {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-}
-
-.contact-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: 1vh;
-}
-
 .socials {
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
   justify-content: space-between;
-}
-
-/* ID Values */
-#box-header {
-  text-align: center;
-  font-size: 5vw;
-}
-
-#box-body {
-  text-align: center;
-  font-size: 2vw;
-}
-
-#about-me-id {
-  color: #001427;
-  font-size: x-large;
 }

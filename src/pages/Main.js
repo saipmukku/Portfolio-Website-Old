@@ -40,7 +40,7 @@ function Main() {
                     <Tab label="Contact" value={3}/>
                 </Tabs>
             </Box>
-            <Box className="content">
+            <Box>
                 {renderContent()}
             </Box>
         </Box>
