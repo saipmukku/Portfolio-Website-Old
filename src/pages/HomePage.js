@@ -13,18 +13,18 @@ function HomePage() {
           <Box>
             <h1 style={{ textAlign:"center", fontSize:"5vw" }}>
               <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
-                Hi, my name is <span style={{ color:"#007FFF" }}>Saipraneeth Mukku</span>
+                Hi, my name is <span style={{ color:"#2980b9" }}>Saipraneeth Mukku</span>
               </motion.div>
             </h1>
             <h3 style={{ textAlign:"center", fontSize:"2.5vw" }}>
               <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.1 }}>
-                but they call me <span style={{ color:"#007FFF" }}>Neeth</span>
+                but they call me <span style={{ color:"#2980b9" }}>Neeth</span>
               </motion.div>
             </h3>
           </Box>
         </Box>
         <Box className="about-me">
-          <span style={{ color:"#001427", fontSize:"x-large" }}>
+          <span style={{ fontSize:"x-large" }}>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
               <h1>About me</h1>
             </motion.div>

@@ -60,7 +60,7 @@ function JobCardFunction(title, location, jobTitle, duration, skills, modal) {
       '&:hover': {
         transform: 'translateY(-5px)',
         boxShadow: '0 12px 36px rgba(0, 0, 0, 0.15)',
-      }, backgroundColor:"#D3D3D3" }} square={false}>
+      }, backgroundColor:"#3498db" }} square={false}>
       <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
         <Box sx={{ p: 2 }}>
           <Stack direction="row" sx={{ justifyContent:"space-between", gap:"5vw", alignItems:"center" }}>

@@ -8,7 +8,7 @@ function ContactPage() {
   const [emailTooltip, setEmailTooltip] = useState("Copy");
 
   const copyAndUpdateTooltip = () => {
-    navigator.clipboard.writeText("saipmukku@gmail.com")
+    navigator.clipboard.writeText("saipmukku@gmail.com");
     setEmailTooltip("Copied!");
     setTimeout(() => {
       setEmailTooltip("Copy");
