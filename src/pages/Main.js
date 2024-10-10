@@ -17,7 +17,7 @@ function Main() {
     const renderContent = () => {
         switch(value) {
         case 0:
-            return <HomePage />;
+            return <HomePage/>;
         case 1:
             return <ResumePage />;
         case 2:
