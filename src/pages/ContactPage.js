@@ -19,7 +19,7 @@ function ContactPage() {
   return (
     <Box className="outer-contact">
       <Box className="message-contact">
-        {/* <DeprecatedMessageFunction /> */}
+        <DeprecatedMessageFunction />
       </Box>
       <Box>
         <Tooltip title="Leo" placement="top" arrow TransitionComponent={Fade}
