@@ -8,15 +8,15 @@ function HomePage() {
     <Box className="outer-home">
       <Box className="personal-info">
         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }} className="avatar-wrapper">
-          <Avatar alt="Neeth's picture" src="portrait.jpeg" sx={{ height: 500, width: 500 }} variant="circle"/>
+          <Avatar alt="Neeth's picture" src="portrait.jpeg" sx={{ height: "36rem", width: "36rem" }} variant="circle"/>
         </motion.div>
         <Box>
-          <h1 style={{ textAlign:"center", fontSize:"4rem" }}>
+          <h1 style={{ textAlign:"center", fontSize:"5vw" }}>
             <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
               Hi, my name is <span style={{ color:"#2980b9" }}>Saipraneeth Mukku</span>
             </motion.div>
           </h1>
-          <h3 style={{ textAlign:"center", fontSize:"2.5rem" }}>
+          <h3 style={{ textAlign:"center", fontSize:"2.5vw" }}>
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 1.1 }}>
               but they call me <span style={{ color:"#2980b9" }}>Neeth</span>
             </motion.div>

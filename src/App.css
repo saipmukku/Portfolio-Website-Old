@@ -14,9 +14,6 @@
     justify-content: center;
   }
 
-  .card-exp {
-  }
-
   .exp {
     width: 45vw;
   }
@@ -53,6 +50,11 @@ body {
 .actual-resume {
   object-fit: contain;
   cursor: pointer;
+}
+
+.avatar-wrapper {
+  display: flex;
+  justify-content: center;
 }
 
 .contact-info {
