@@ -22,7 +22,7 @@ function ResumePage() {
                         onClick={handleGoBack}>
                         <ArrowBackIcon />
                     </Button>
-                    <iframe src="Resume.pdf" style={{ position: 'fixed', top: 0, left: 0, 
+                    <iframe src="documents/Resume.pdf" style={{ position: 'fixed', top: 0, left: 0, 
                         width: '100vw', height: '100vh', border: 'none', zIndex:1 }} title="Resume PDF" />
                 </Box>
             ) : (
@@ -31,12 +31,12 @@ function ResumePage() {
                             sx={{ display:'flex', alignItems:"center", justifyContent:'center' }}
                             closeAfterTransition
                             slotProps={{ backdrop: { timeout: 500 } }}>
-                        <Box component="img" src="resume.jpeg" alt="Resume" 
+                        <Box component="img" src="documents/resume.jpeg" alt="Resume" 
                             sx={{ width:'100%', height:'100%', objectFit:'contain' }}/>
                     </Modal>
                     <Box className="image-resume">
                         <motion.div whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
-                            <Box component="img" src="resume.jpeg" className="actual-resume" alt="Resume" onClick={handleOpen}/>
+                            <Box component="img" src="documents/resume.jpeg" className="actual-resume" alt="Resume" onClick={handleOpen}/>
                         </motion.div>
                         <motion.div whileHover={{ scale: 1.25 }} whileTap={{ scale: 1.5 }}>
                             <PageviewIcon sx={{ height:"64px", width:"64px" }}

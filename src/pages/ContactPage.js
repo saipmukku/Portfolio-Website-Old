@@ -25,7 +25,7 @@ function ContactPage() {
         <Tooltip title="Leo" placement="top" arrow TransitionComponent={Fade}
           slotProps={{ popper: { modifiers: { name: "offset", options: { offset: [0, -75]} } } }}>
           <motion.div className="animated-avatar" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
-            <Avatar alt="Neeth's picture" src="leo.png" sx={{ height: 420, width: 420 }} variant="circle"/>
+            <Avatar alt="Neeth's picture" src="documents/leo.png" sx={{ height: 420, width: 420 }} variant="circle"/>
           </motion.div>
         </Tooltip>
         <Box className="contact-info">
@@ -41,7 +41,7 @@ function ContactPage() {
             <Link href="https://www.linkedin.com/in/saipmukku" target="_blank" rel="noopener noreferrer">
               <Tooltip title="LinkedIn" placement="top" arrow TransitionComponent={Fade}>
                 <motion.div className="animated-icon" whileHover={{ scale: 1.15 }} whileTap={{ scale: 1.35 }}>
-                  <Box component="img" src="linkedin-logo.png" sx={{ width: "64px", height: "64px" }} />
+                  <Box component="img" src="documents/linkedin-logo.png" sx={{ width: "64px", height: "64px" }} />
                 </motion.div>
               </Tooltip>
             </Link>
@@ -50,16 +50,14 @@ function ContactPage() {
             <Link href="https://www.github.com/saipmukku" target="_blank" rel="noopener noreferrer">
               <Tooltip title="GitHub" placement="top" arrow TransitionComponent={Fade}>
                 <motion.div className="animated-icon" whileHover={{ scale: 1.15 }} whileTap={{ scale: 1.35 }}>
-                  <Box component="img" src="github-logo.png" sx={{ width: "64px", height: "64px" }}/>
+                  <Box component="img" src="documents/github-logo.png" sx={{ width: "64px", height: "64px" }}/>
                 </motion.div>
               </Tooltip>
             </Link>
           </Box>
         </Box>
       </Box>
-      <Box className="message-contact">
-
-      </Box>
+      <Box className="message-contact"></Box>
     </Box>
   )
 }

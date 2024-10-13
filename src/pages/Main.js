@@ -7,25 +7,24 @@ import ContactPage from './ContactPage';
 import '../App.css';
 
 function Main() {
-    const [value, setValue] = useState(0);
+    const [value, setValue] = useState(4);
 
     const handleChange = (_event, newValue) => {
         setValue(newValue);
-        console.log(newValue);
     }
 
     const renderContent = () => {
         switch(value) {
-        case 0:
-            return <HomePage/>;
-        case 1:
-            return <ResumePage />;
-        case 2:
-            return <ExperiencePage />;
-        case 3:
-            return <ContactPage />;
-        default:
-            return <HomePage />;
+            case 0:
+                return <HomePage />;
+            case 1:
+                return <ResumePage />;
+            case 2:
+                return <ExperiencePage />;
+            case 3:
+                return <ContactPage />;
+            default:
+                return <HomePage />;
         }
     }
 

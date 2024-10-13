@@ -51,7 +51,7 @@ function JobCardFunction(title, location, jobTitle, duration, skills, modal) {
   ));
 
   return (
-    <Card variant="outlined" sx={{ width: 700,
+    <Card variant="outlined" sx={{
       margin: '20px auto',
       padding: 2,
       borderRadius: 4,
@@ -61,7 +61,7 @@ function JobCardFunction(title, location, jobTitle, duration, skills, modal) {
         transform: 'translateY(-5px)',
         boxShadow: '0 12px 36px rgba(0, 0, 0, 0.15)',
       }, backgroundColor:"#3498db" }} square={false}>
-      <motion.div className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
+      <motion.Box className="animated-icon" whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }}>
         <Box sx={{ p: 2 }}>
           <Stack direction="row" sx={{ justifyContent:"space-between", gap:"5vw", alignItems:"center" }}>
             <Typography gutterBottom variant="h5">
@@ -89,7 +89,7 @@ function JobCardFunction(title, location, jobTitle, duration, skills, modal) {
             {skillChips}
           </Stack>
         </Box>
-      </motion.div>
+      </motion.Box>
     </Card>
   );
 }
