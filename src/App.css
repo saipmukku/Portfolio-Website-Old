@@ -1,5 +1,45 @@
 /*Primary text color: #170312
   Secondary text color: #41658A*/
+@media (max-width: 1000px) {
+  .about-me {
+    text-align: center;
+  }
+
+  .actual-resume {
+    width: 90vw;
+  }
+
+  .avatar-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card-exp {
+  }
+
+  .exp {
+    width: 45vw;
+  }
+
+  .personal-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .personal-info > * {
+    width: 100%;
+  }
+
+  .swe {
+    display: none;
+  }
+
+  .tabs {
+    width: 100vw;
+  }
+}  
+
 body {
   overflow-x: hidden;
 }
@@ -88,7 +128,6 @@ body {
 
 .personal-info {
   display: flex;
-  flex-direction: row;
 }
 
 .root {
@@ -143,4 +182,9 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.swe {
+  font-weight: 400;
+  padding: 0.5vw;
 }

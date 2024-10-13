@@ -32,9 +32,10 @@ function Main() {
     return (
         <Box className="main-page" sx={{ width: '100%' }}>
             <Box className="nav-bar">
-                <Typography variant="h5" sx={{ fontWeight:'400', p:'0.5vw' }}>Saipraneeth Mukku | Software Engineer</Typography>
-                <Tabs onChange={handleChange} value={value} variant="standard" sx={{ width:'1000' }} 
-                    textColor="#2980b9" centered={true}>
+                <Typography variant="h5" className="swe">
+                    Saipraneeth Mukku | Software Engineer
+                </Typography>
+                <Tabs onChange={handleChange} value={value} variant="standard" textColor="#2980b9" centered={true} className="tabs">
                     <Tab label="Home" value={0}/>
                     <Tab label="Resume" value={1}/>
                     <Tab label="Experience" value={2}/>
