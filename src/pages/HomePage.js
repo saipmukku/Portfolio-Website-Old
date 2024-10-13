@@ -7,7 +7,7 @@ function HomePage() {
   return (
     <Box className="outer-home">
       <Box className="personal-info">
-        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }} className="avatar-wrapper">
+        <motion.Box whileHover={{ scale: 1.02 }} whileTap={{ scale: 1.05 }} className="avatar">
           <Avatar alt="Neeth's picture" src="documents/portrait.jpeg" sx={{ height: "30rem", width: "30rem" }} variant="circle"/>
         </motion.Box>
         <Box>
